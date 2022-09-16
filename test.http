@@ -1,0 +1,21 @@
+GET https://jsonplaceholder.typicode.com/posts HTTP/1.1
+Content-Type: : application/json
+
+### 포스트들 가져오기
+https://jsonplaceholder.typicode.com/posts
+
+###
+https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo&datatype=csv
+
+###
+POST https://jsonplaceholder.typicode.com/todos
+Content-Type: application/json
+
+{
+    "userId": 100,
+    "title": "test",
+    "completed": false
+}
+
+###
+https://www.alphavantage.co/query?function=LISTING_STATUS&apikey=33MXYA1FRYTL5X4B

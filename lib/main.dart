@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stock_app/data/source/local/company_listing_entity.dart';
 import 'package:flutter_stock_app/util/color_schemes.dart';
+import 'package:hive/hive.dart';
 
 void main() {
+  Hive.registerAdapter(CompanyListingEntityAdapter());
   runApp(const MyApp());
 }
 
@@ -16,7 +19,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: lightColorScheme,
       ),
-      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme,),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: darkColorScheme,
+      ),
       themeMode: ThemeMode.system,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
